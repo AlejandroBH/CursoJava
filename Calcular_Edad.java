@@ -9,7 +9,7 @@ public class Calcular_Edad {
 	public static void main(String[] args) {
 		
 		Scanner entrada = new Scanner(System.in);
-		int pMax=0; //inicial
+		int pMax=0;
 		
 		System.out.print("Ingresa el maximo de personas: ");
 		pMax=entrada.nextInt();
