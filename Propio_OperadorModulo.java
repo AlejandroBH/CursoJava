@@ -2,7 +2,7 @@ package Todo_Code;
 
 import java.util.Scanner;
 
-public class OperadorModulo {
+public class Propio_OperadorModulo {
 
 	public static void main(String[] args) {
 		
