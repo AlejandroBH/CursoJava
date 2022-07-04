@@ -1,7 +1,7 @@
 package Todo_Code;
 import java.util.Scanner;
 
-public class SueldosDespensa {
+public class Propio_SueldoDespensa {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
