@@ -4,7 +4,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
-public class Calcular_Edad {
+public class Propio_CalculoEdad {
 
 	public static void main(String[] args) {
 		

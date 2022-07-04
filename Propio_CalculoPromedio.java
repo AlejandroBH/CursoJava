@@ -1,7 +1,7 @@
 package Todo_Code;
 import java.util.Scanner;
 
-public class Calculo_Promedio {
+public class Propio_CalculoPromedio {
 
 	public static void main(String[] args) {
 		
