@@ -6,22 +6,16 @@ public class OperadorModulo {
 
 	public static void main(String[] args) {
 		
-		int num1;
-		int num2;
-		int resultado;
+		int input;
 		
 		Scanner entrada = new Scanner(System.in);
-		System.out.print("Ingresa el primer numero: ");
-		num1 = entrada.nextInt();
-		System.out.print("Ingresa el segundo numero: ");
-		num2 = entrada.nextInt();
-		
-		resultado = num1 % num2;
+		System.out.print("Ingresa un numero entero: ");
+		input = entrada.nextInt();
 
-		if(resultado==0) {
-			System.out.println("El resuduo de la division es un numero par");
+		if(input % 2 == 0) {
+			System.out.println("El numero es par");
 		}else {
-			System.out.println("El resuduo de la division es un numero inpar");
+			System.out.println("El numero es impar");
 		}
 	}
 }
