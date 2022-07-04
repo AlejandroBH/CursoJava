@@ -1,5 +1,6 @@
 package Todo_Code;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Propio_CalculadoraIMC {
@@ -10,6 +11,7 @@ public class Propio_CalculadoraIMC {
 		double peso=0, estatura=0, resultado=0;
 		int sexo;
 		Scanner entrada = new Scanner(System.in);
+		DecimalFormat FormatResultado = new DecimalFormat("#.00");
 		
 		do {
 			System.out.println("Que sexo quiere calcular?");
@@ -20,7 +22,9 @@ public class Propio_CalculadoraIMC {
 			
 			switch (sexo) {
 			case 1:
+				System.out.println("-------------------------------------------------");
 				System.out.println("Calcular IMC de Hombres");
+				System.out.println("-------------------------------------------------");
 				System.out.print("Ingrese su peso en Kilos: ");
 				peso=entrada.nextDouble();
 				System.out.print("Ingrese su estatura en metros: ");
@@ -28,7 +32,8 @@ public class Propio_CalculadoraIMC {
 				
 				resultado = peso / (estatura * estatura);
 				
-				System.out.println("Su indice de masa corporal es: " + resultado);
+				System.out.println("");
+				System.out.println("Su indice de masa corporal es: " + FormatResultado.format(resultado));
 				
 				if(resultado < 20) {
 					System.out.println("Tienes desnutricion");
@@ -53,7 +58,9 @@ public class Propio_CalculadoraIMC {
 				}
 				break;
 			case 2:
+				System.out.println("-------------------------------------------------");
 				System.out.println("Calcular IMC de Mujeres");
+				System.out.println("-------------------------------------------------");
 				System.out.print("Ingrese su peso en Kilos: ");
 				peso=entrada.nextDouble();
 				System.out.print("Ingrese su estatura en metros: ");
@@ -61,7 +68,8 @@ public class Propio_CalculadoraIMC {
 				
 				resultado = peso / (estatura * estatura);
 				
-				System.out.println("Su indice de masa corporal es: " + resultado);
+				System.out.println("");
+				System.out.println("Su indice de masa corporal es: " + FormatResultado.format(resultado));
 				
 				if(resultado < 19) {
 					System.out.println("Tienes desnutricion");
@@ -86,7 +94,9 @@ public class Propio_CalculadoraIMC {
 				}
 				break;
 				default:
+					System.out.println("-------------------------------------------------");
 					System.out.println("La opcion digitada no existe, intente nuevamente.");
+					System.out.println("-------------------------------------------------");
 					break;
 			}
 		} while (sexo!=1 && sexo!=2);
